@@ -1,0 +1,89 @@
+i18n
+something about internationalization
+
+Yi Wang
+LinkedIn
+
+* i18n
+
+- locale
+- language
+- script
+- encoding
+
+* Locale
+
+Locale includes everything
+
+- Number format setting
+- Character classification, case conversion settings
+- Date - time format setting
+- String collation setting
+- Currency format setting
+- Paper size setting
+- Keyboard layout
+
+* Set Locale
+
+POSIX format: `[language[_territory][.codeset][@modifier]]`
+
+  set LC_ALL = en_AU.UTF - 8
+
+POSIX environment variables:
+
+  $ locale
+  LANG = cs_CZ.UTF - 8
+  LC_CTYPE = "cs_CZ.UTF-8"
+  LC_NUMERIC = "cs_CZ.UTF-8"
+  LC_TIME = "cs_CZ.UTF-8"
+  LC_COLLATE = "cs_CZ.UTF-8"
+  LC_MONETARY = "cs_CZ.UTF-8"
+  LC_MESSAGES = "cs_CZ.UTF-8"
+  LC_PAPER = "cs_CZ.UTF-8"
+  LC_NAME = "cs_CZ.UTF-8"
+  LC_ADDRESS = "cs_CZ.UTF-8"
+  LC_TELEPHONE = "cs_CZ.UTF-8"
+  LC_MEASUREMENT = "cs_CZ.UTF-8"
+  LC_IDENTIFICATION = "cs_CZ.UTF-8"
+  LC_ALL =
+
+* Get Locale
+
+.code LocaleExample.java
+
+Example output:
+
+  en_US
+  United States
+  USA
+  English(United States)
+  en
+
+* Guess Locale
+
+I found no way to do it.
+
+* Guess Encoding
+
+  > enca --list languages
+  belarussian: CP1251 IBM866 ISO-8859-5 KOI8-UNI maccyr IBM855 KOI8-U
+    bulgarian: CP1251 ISO-8859-5 IBM855 maccyr ECMA-113
+        czech: ISO-8859-2 CP1250 IBM852 KEYBCS2 macce KOI-8_CS_2 CORK
+     estonian: ISO-8859-4 CP1257 IBM775 ISO-8859-13 macce baltic
+     croatian: CP1250 ISO-8859-2 IBM852 macce CORK
+    hungarian: ISO-8859-2 CP1250 IBM852 macce CORK
+   lithuanian: CP1257 ISO-8859-4 IBM775 ISO-8859-13 macce baltic
+      latvian: CP1257 ISO-8859-4 IBM775 ISO-8859-13 macce baltic
+       polish: ISO-8859-2 CP1250 IBM852 macce ISO-8859-13 ISO-8859-16 baltic CORK
+      russian: KOI8-R CP1251 ISO-8859-5 IBM866 maccyr
+       slovak: CP1250 ISO-8859-2 IBM852 KEYBCS2 macce KOI-8_CS_2 CORK
+      slovene: ISO-8859-2 CP1250 IBM852 macce CORK
+    ukrainian: CP1251 IBM855 ISO-8859-5 CP1125 KOI8-U maccyr
+      chinese: GBK BIG5 HZ
+         none:
+         
+An example
+
+  > echo 长城 | enca -L none
+  Universal transformation format 8 bits; UTF-8
+         
