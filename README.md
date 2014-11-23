@@ -1,0 +1,1 @@
+Click this [link](http://go-talks.appspot.com/github.com/wangkuiyi/i18n/i18n.slide) to play slides.
