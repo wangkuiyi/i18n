@@ -77,26 +77,26 @@ Chinese words ... were also borrowed extensively into the *Korean*, *Japanese* a
 
 Multiple writing systems of Sanskrit:
 
-.image ./sanskrit.png
+.image sanskrit.png
 
 * Script: Sanskrit Family
 
 Tibetan words are compositions of Sanskrit scripts
 
-.image ./tibetan.png 240 _
+.image tibetan.png 240 _
 
 * Script: Han Unification
 
 Han Unification, an effort by Unicode standard committee, unifies scripts in Simplified Chinese, Traditional Chinese, Japanese, and Korean.
 
-.image ./cjk.png 350 _
+.image cjk.png 350 _
 
 
 * Script: Han Unification
 
 Factors preventing unification:
 
-.image ./no-unification.png 250 _
+.image no-unification.png 250 _
 
 * Script: Distinguish CJK
 
@@ -111,7 +111,7 @@ Arabic, Armenian, Avestan, Balinese, Bamum, Batak, Bengali, Bopomofo, Brahmi, Br
 
 * Identify Script
 
-.play ./scripts.go
+.play scripts.go
 
 * Guess Encoding
 
