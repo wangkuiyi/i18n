@@ -63,6 +63,60 @@ Example output:
 
 I found no way to do it.
 
+* Language: Sanskrit Family
+
+.image http://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Phrase_sanskrit.png/500px-Phrase_sanskrit.png _ 400
+
+* Language: Chinese
+
+Official language in:
+
+- *China*, *Hong* *Kong*, *Macau*, *Taiwan*, *Singapore*, *Burma* *Wa* *State*
+
+Historically affected:
+
+- Chinese words ... were also borrowed extensively into the *Korean*, *Japanese* and *Vietnamese* languages, and today comprise over half their vocabularies.
+
+* Script: Sanskrit Family
+
+Multiple writing systems of Sanskrit:
+
+.image ./Sanskrit.png
+
+* Script: Sanskrit Family
+
+Tibetan words are compositions of Sanskrit scripts
+
+.image ./tibetan.png 240 _
+
+* Script: Han Unification
+
+Han Unification, an effort by Unicode standard committee, unifies scripts in Simplified Chinese, Traditional Chinese, Japanese, and Korean.
+
+.image ./cjk.png 350 _
+
+
+* Script: Han Unification
+
+Factors preventing unification:
+
+.image ./no-unification.png 250 _
+
+* Script: Distinguish CJK
+
+- Some characters (ideographs) are used in Chinese (or Korean, or Japanese) only.
+- Most ideographs are used in all these languages.
+
+* Identify Script
+
+Identifiable scripts in Unicode:
+
+Arabic, Armenian, Avestan, Balinese, Bamum, Batak, Bengali, Bopomofo, Brahmi, Braille, Buginese, Buhid, Canadian_Aboriginal, Carian, Chakma, Cham, Cherokee, Common, Coptic, Cuneiform, Cypriot, Cyrillic, Deseret, Devanagari, Egyptian_Hieroglyphs, Ethiopic, Georgian, Glagolitic, Gothic, Greek, Gujarati, Gurmukhi, *Han*, Hangul, Hanunoo, Hebrew, Hiragana, Imperial_Aramaic, Inherited, Inscriptional_Pahlavi, Inscriptional_Parthian, Javanese, Kaithi, Kannada, Katakana, Kayah_Li, Kharoshthi, Khmer, Lao, Latin, Lepcha, Limbu, Linear_B, Lisu, Lycian, Lydian, Malayalam, Mandaic, Meetei_Mayek, Meroitic_Cursive, Meroitic_Hieroglyphs, Miao, Mongolian, Myanmar, New_Tai_Lue, Nko, Ogham, Ol_Chiki, Old_Italic, Old_Persian, Old_South_Arabian, Old_Turkic, Oriya, Osmanya, Phags_Pa, Phoenician, Rejang, Runic, Samaritan, Saurashtra, Sharada, Shavian, Sinhala, Sora_Sompeng, Sundanese, Syloti_Nagri, Syriac, Tagalog, Tagbanwa, Tai_Le, Tai_Tham, Tai_Viet, Takri, Tamil, Telugu, Thaana, Thai, Tibetan, Tifinagh, Ugaritic, Vai, Yi
+
+* Identify Script
+
+.play ./scripts.go
+
 * Guess Encoding
 
   > enca --list languages
@@ -84,6 +138,7 @@ I found no way to do it.
          
 An example
 
+  > sudo apt-get install enca
   > echo 长城 | enca -L none
   Universal transformation format 8 bits; UTF-8
          
