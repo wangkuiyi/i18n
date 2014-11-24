@@ -73,6 +73,14 @@ Official language in: *China*, *Hong* *Kong*, *Macau*, *Taiwan*, *Singapore*, *B
 
 Chinese words ... were also borrowed extensively into the *Korean*, *Japanese* and *Vietnamese* languages, and today comprise over half their vocabularies.
 
+* Guess Language
+
+Train a supervised learning model that predicts the language given characters.
+
+.link https://pypi.python.org/pypi/guess-language guess-language
+
+.link https://github.com/saffsd/langid.py langid.py
+
 * Script: Sanskrit Family
 
 Multiple writing systems of Sanskrit:
@@ -113,6 +121,16 @@ Arabic, Armenian, Avestan, Balinese, Bamum, Batak, Bengali, Bopomofo, Brahmi, Br
 
 .play scripts.go
 
+* Encoding
+
+How characters are represented by numbers.
+
+- ASCII
+- Unicode (UTF-8, UTF-16)
+- GB 2312 (for Simplified Chinese)
+- BIG5 (for Traditional Chinese)
+- etc.
+
 * Guess Encoding
 
   > enca --list languages
@@ -138,3 +156,8 @@ An example
   > echo 长城 | enca -L none
   Universal transformation format 8 bits; UTF-8
          
+* Summary
+
+- encoding: not deterministic identifiable
+- script: identificable given unicode encoding
+- language: 
