@@ -158,6 +158,7 @@ An example
          
 * Summary
 
-- encoding: not deterministic identifiable
-- script: identificable given unicode encoding
-- language: 
+- encoding: statistically identifiable
+- script: deterministically identificable given unicode encoding
+- language: statistically identifiable
+- locale: ?
